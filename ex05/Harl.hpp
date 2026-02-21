@@ -5,7 +5,6 @@
 #include <iostream>
 #include <string>
 
-
 class Harl
 {
 public:
@@ -18,8 +17,5 @@ private:
 	void	warning( void );
 	void	error( void );
 };
-
-
-
 
 #endif
