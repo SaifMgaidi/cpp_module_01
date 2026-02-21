@@ -16,13 +16,13 @@ int	main(int argc, char *argv[])
 		return (1);
 	}
 	file.open(argv[1]);
-	out_filename = get_out_filename(argv[1]);
-	out_file.open(out_filename.c_str());
 	if (!file.is_open())
 	{
 		std::cerr << "error: Unable to open file.\n";
 		return (1);
 	}
+	out_filename = get_out_filename(argv[1]);
+	out_file.open(out_filename.c_str());
 	if (!out_file.is_open())
 	{
 		std::cerr << "error: Unable to create output file.\n";
